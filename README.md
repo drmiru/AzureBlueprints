@@ -1,0 +1,2 @@
+# AzureBlueprints
+various sample blueprints
