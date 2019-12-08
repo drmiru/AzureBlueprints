@@ -1,0 +1,34 @@
+{
+  "properties": {
+    "targetScope": "subscription",
+    "parameters": {
+      "networkWatcher_networkWatcherName": {
+        "type": "string",
+        "metadata": {
+          "displayName": "networkWatcherName (Network Watcher)"
+        },
+        "allowedValues": []
+      },
+      "networkWatcher_location": {
+        "type": "string",
+        "metadata": {
+          "displayName": "location (Network Watcher)"
+        },
+        "allowedValues": []
+      }
+    },
+    "resourceGroups": {
+      "ResourceGroup": {
+        "metadata": {
+          "displayName": "Core Network Resource Group"
+        },
+        "dependsOn": [],
+        "tags": {
+          "Environment": "",
+          "Owner": "",
+          "Service": ""
+        }
+      }
+    }
+  }
+}

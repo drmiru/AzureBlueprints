@@ -1,0 +1,42 @@
+{
+  "kind": "template",
+  "properties": {
+    "displayName": "Network Watcher",
+    "description": "",
+    "dependsOn": [],
+    "template": {
+      "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+      "contentVersion": "1.0.0.0",
+      "parameters": {
+        "networkWatcherName": {
+          "type": "string"
+        },
+        "location": {
+          "type": "string"
+        }
+      },
+      "variables": {},
+      "resources": [
+        {
+          "name": "[parameters('networkWatcherName')]",
+          "type": "Microsoft.Network/networkWatchers",
+          "apiVersion": "2019-09-01",
+          "location": "[parameters('location')]",
+          "tags": {},
+          "properties": {},
+          "resources": []
+        }
+      ],
+      "outputs": {}
+    },
+    "resourceGroup": "ResourceGroup",
+    "parameters": {
+      "networkWatcherName": {
+        "value": "[parameters('networkWatcher_networkWatcherName')]"
+      },
+      "location": {
+        "value": "[parameters('networkWatcher_location')]"
+      }
+    }
+  }
+}
