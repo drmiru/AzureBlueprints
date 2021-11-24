@@ -1,0 +1,40 @@
+{
+ "sku": {
+  "name": "A0",
+  "tier": "Free"
+ },
+ "identity": {
+  "principalId": "e2bc9f84-4d5e-48dc-aaeb-2c77453009a0",
+  "tenantId": "ff1a6977-6e45-4657-b188-9e70e57310a8",
+  "type": "SystemAssigned"
+ },
+ "properties": {
+  "displayName": "test01",
+  "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/p-mag-root/providers/Microsoft.Authorization/policySetDefinitions/7762D61B7AB8A71926B200A60FF1B68A",
+  "scope": "/providers/Microsoft.Management/managementGroups/p-mag-root",
+  "notScopes": [],
+  "parameters": {
+   "profileName": {
+    "value": "AuditLogAnalytics"
+   },
+   "logAnalytics": {
+    "value": "/subscriptions/7487a514-51f9-4050-9bb1-79de33af929d/resourcegroups/p-rgr-core-01/providers/microsoft.operationalinsights/workspaces/p-ala-corelogs-01"
+   }
+  },
+  "description": "",
+  "metadata": {
+   "parameterScopes": {
+    "logAnalytics": "/subscriptions/7487a514-51f9-4050-9bb1-79de33af929d/resourcegroups/p-rgr-core-01"
+   },
+   "createdBy": "157c5632-b872-40d1-aeec-8c187f069e81",
+   "createdOn": "2021-11-24T10:26:49.3185231Z",
+   "updatedBy": "157c5632-b872-40d1-aeec-8c187f069e81",
+   "updatedOn": "2021-11-24T10:29:20.5900986Z"
+  },
+  "enforcementMode": "Default"
+ },
+ "id": "/providers/Microsoft.Management/managementGroups/p-mag-root/providers/Microsoft.Authorization/policyAssignments/test01",
+ "type": "Microsoft.Authorization/policyAssignments",
+ "name": "test01",
+ "location": "westeurope"
+}
