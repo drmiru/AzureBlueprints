@@ -1,0 +1,40 @@
+{
+ "sku": {
+  "name": "A0",
+  "tier": "Free"
+ },
+ "identity": {
+  "principalId": "f8a85a6b-35b2-4916-a5c6-c10ffaa90fca",
+  "tenantId": "ff1a6977-6e45-4657-b188-9e70e57310a8",
+  "type": "SystemAssigned"
+ },
+ "properties": {
+  "displayName": "Azure Diagnostics Policy Initiative for a Log Analytics Workspace",
+  "policyDefinitionId": "/providers/Microsoft.Management/managementGroups/p-mag-root/providers/Microsoft.Authorization/policySetDefinitions/7762D61B7AB8A71926B200A60FF1B68A",
+  "scope": "/providers/Microsoft.Management/managementGroups/p-mag-root",
+  "notScopes": [],
+  "parameters": {
+   "profileName": {
+    "value": "diagALA"
+   },
+   "logAnalytics": {
+    "value": "/subscriptions/7487a514-51f9-4050-9bb1-79de33af929d/resourcegroups/p-rgr-core-01/providers/microsoft.operationalinsights/workspaces/p-ala-corelogs-01"
+   }
+  },
+  "metadata": {
+   "assignedBy": "Michael Rueefli",
+   "parameterScopes": {
+    "logAnalytics": "/subscriptions/7487a514-51f9-4050-9bb1-79de33af929d/resourcegroups/p-rgr-core-01"
+   },
+   "createdBy": "157c5632-b872-40d1-aeec-8c187f069e81",
+   "createdOn": "2021-11-24T08:48:39.713087Z",
+   "updatedBy": null,
+   "updatedOn": null
+  },
+  "enforcementMode": "Default"
+ },
+ "id": "/providers/Microsoft.Management/managementGroups/p-mag-root/providers/Microsoft.Authorization/policyAssignments/099d881ff1cd4194ba3556f2",
+ "type": "Microsoft.Authorization/policyAssignments",
+ "name": "099d881ff1cd4194ba3556f2",
+ "location": "westeurope"
+}
